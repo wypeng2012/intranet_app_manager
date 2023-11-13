@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        JAR_FILE: build/libs/intranet_app_manager.jar
+        JAR_FILE: /home/gradle/src/build/libs/intranet_app_manager-1.0.1.jar
       dockerfile: Dockerfile
     container_name: web
     networks:
