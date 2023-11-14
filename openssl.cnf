@@ -9,6 +9,8 @@ stateOrProvinceName=State or Province Name (full name)
 stateOrProvinceName_default=ZheJiang
 localityName=Locality Name (eg, city)
 localityName_default=HangZhou
+organizationName=Organizational Name (eg, section)
+organizationName_default=NE
 organizationalUnitName=Organizational Unit Name (eg, section)
 organizationalUnitName_default=${ip}
 commonName=Internet Widgits Ltd
@@ -37,10 +39,9 @@ default_days  = 365
 
 # section for DN field validation and order
 [my_ca_policy]
-commonName             = ${ip}
-countryName            = CN
-stateOrProvinceName    = ZheJiang
-localityName           = HZ
-organizationName       = NE
-organizationalUnitName = Music
-emailAddress           = app@163.com
+countryName		= match
+stateOrProvinceName	= match
+organizationName	= match
+organizationalUnitName	= optional
+commonName		= supplied
+emailAddress		= optional
