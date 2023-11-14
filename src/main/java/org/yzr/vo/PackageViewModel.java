@@ -58,7 +58,7 @@ public class PackageViewModel {
             this.iOS = true;
             String url = httpsURL + "/m/" + aPackage.getId();
             try {
-                this.installURL = "itms-services://?action=download-manifest&url=" + URLEncoder.encode(url, "utf-8");
+                this.installURL = "itms-services://?action=download-manifest&url=" + url;
             } catch (Exception e) {
                 e.printStackTrace();
             }
