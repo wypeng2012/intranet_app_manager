@@ -47,6 +47,6 @@ public class PathManager {
      * @return
      */
     public String getCAPath() {
-        return getBaseURL() + "/crt/ca.crt";
+        return useHttps().getBaseURL() + "/crt/ca.crt";
     }
 }
