@@ -125,7 +125,7 @@ public class PackageController {
             // 4. 入库
             App app = this.appService.addPackage(filePath, extra, user);
             // 5. 发送通知
-            String codeURL = PathManager.request(request).getBaseURL() + "/p/code/" + app.getCurrentPackage().getId();
+            String codeURL = PathManager.request(request).getBaseURL() + "/s/" + app.getShortCode() + "?id="  + app.getCurrentPackage().getId();
             // 发送WebHook消息
             WebHookClient.sendMessage(app, PathManager.request(request).getBaseURL(), storageUtil);
             return ResponseUtil.ok(codeURL);
