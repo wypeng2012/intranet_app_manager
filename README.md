@@ -65,6 +65,15 @@ sh deploy.sh docker
 #直接在终端启动(仅实现了Mac端，其它端未试)
 sh deploy.sh
 ```
+```shell
+git clone https://github.com/yizhaorong/intranet_app_manager.git
+cd intranet_app_manager
+#docker方式启动
+修改application.properties 里边的ip为你自己的ip
+参考上边的证书，创建自己的证书，并替换ca.crt,server.pkcs12文件
+docker compose up -d --build
+
+```
 
 服务启动后即可输入你的 IP 或域名来访问。
 
