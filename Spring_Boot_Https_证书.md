@@ -81,7 +81,7 @@ DNS.2 = 192.168.0.111
 ### 生成ca.key并自签署
 
 ```shell
-openssl req -new -x509 -days 3650 -keyout ca.key -out ca.crt -config openssl.cnf
+openssl req -new -x509 -days 365 -keyout ca.key -out ca.crt -config openssl.cnf
 ```
 
 ## 创建服务器证书
