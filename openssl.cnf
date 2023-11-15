@@ -23,7 +23,8 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 subjectAltName = @alt_names
 
 [ alt_names ]
-DNS.1 = ${ip}
+#DNS.1 = ${ip}
+IP.1 = ${ip}
 # section for the "default_ca" option
 [ca]
 default_ca=my_ca_default
